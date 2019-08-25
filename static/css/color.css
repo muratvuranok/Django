@@ -1,0 +1,62 @@
+/**
+	Libra-Responsive Personal Blog Template
+ 	Copyright (c) 2015, Pophonic 
+	
+	Author: Pophonic
+	Profile: themeforest.net/user/pophonic
+	
+**/
+
+
+.layout-divider:before,
+blockquote:after,
+.social-media-share2 ul li a:hover,
+.page-title h1:after,
+.page-title h2:after,
+.page-title h3:after,
+.home-slide-category a,
+.carousel-item .carousel-title h3:after,
+.post-entry h2:after,
+.pagination ul li:hover a,
+.pagination ul li.pagination-active a,
+.archive-title:after,
+.post-single-tags a:hover,
+.post-author-details h3:after,
+.widget-detail:after,
+.subscribe-button,
+.widget_tag_cloud .tagcloud a:hover,
+.widget-detail.widget-color,
+.footer-details .widget-title h3:after,
+.footer-details .subscribe-button,
+.footer-details .widget_tag_cloud .tagcloud a:hover {
+	background-color: #e7cd3b;
+}
+
+.carousel-item:hover .carousel-title {
+	background-color: rgba(231,205,59,0.75);
+}
+
+.custom-list li i,
+.post-meta ul li a:hover,
+.post-pagination:hover h4,
+.post-pagination.pagination-prev span:before,
+.post-pagination.pagination-next span:after,
+.post-author-social-media li a:hover,
+.post-related-item h4 a:hover,
+.comment-name a:hover,
+.comment-reply a,
+.recent-post-detail a:hover {
+	color: #e7cd3b;
+}
+
+.subscribe-button:hover,
+.footer-details .subscribe-button:hover {
+	background-color: #f1d640;
+}
+
+@media (min-width: 992px) {
+	.nav-menu ul li:after,
+	.nav-menu ul ul li:hover:after {
+		background-color: #e7cd3b;
+	}
+}
