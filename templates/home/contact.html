@@ -1,0 +1,107 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content%}
+<!--Content Wrapper Start-->
+<div class="content-wrapper">
+    <div class="container">
+        <div class="row section-wrapper">
+        
+            <div class="col-xs-12 nopadding">
+                <div class="box">
+            
+                    <div class="content-body">
+                    
+                        <!--Featured Image Start-->
+                        <div class="featured-image img-div-cover">
+                            <img src="{% static 'images/upload/contact-featured-image.jpg' %}" alt="featured image" />
+                        </div>
+                        <!--Featured Image End-->
+                        
+                        <!--Breadcrumbs Start-->
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!--Breadcrumbs End-->
+                        
+                        <!--Content Details Body Start-->
+                        <div class="content-details-body">
+                        
+                            <div class="page-title title-center">
+                                <h1>Contact</h1>
+                            </div>
+                            
+                            <p><span class="dropcap">W</span>orem ipsum dolor sit amet, consectetur adipiscing elit ut mauris magna, lacinia ac purus quis, rutrum bibendum leo. Nullam sit amet nibh eu odio ornare laoreet. Duis imperdiet est ut tristique auctor. Suspendisse mattis condimentum ultricies. Cras non enim et augue facilisis lacinia nec a turpis. Maecenas a mauris eget ligula condimentum semper. In egestas rhoncus consequat. Proin ut lectus quis dolor congue iaculis. Vivamus consequat facilisis dolor, eu porta risus placerat sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempor ornare justo sed congue. Cras eu vehicula eros. Morbi nec urna congue lectus posuere tristique eu ut magna. Duis at lectus quis est mollis viverra. Morbi varius turpis ipsum, quis ultrices leo suscipit ut. Fusce ac nisi at elit faucibus congue.</p>
+                            
+                            <div data-height="13"></div>
+                            
+                            <!--Social Media Share Start-->
+                            <div class="social-media-share2">
+                                <ul>
+                                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--Social Media Share End-->
+                            
+                            <div data-height="40"></div>
+                            
+                            <!--Contact Form Start-->
+                            <form id="form_contact" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="box">
+                                            <input id="name" type="text" name="name" required />
+                                            <label>Your name *</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="box">
+                                            <input id="email" type="text" name="email" required />
+                                            <label>Your email *</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="box">
+                                            <input id="mysubject" type="text" name="mysubject" required />
+                                            <label>Subject *</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="box">
+                                            <textarea id="mymessage" name="mymessage" required></textarea>
+                                            <label>Message *</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <input id="submit_message" type="submit" value="Send message"/>
+                                        <span class="loading"><i class="fa fa-spinner fa-pulse"></i></span>
+                                    </div>
+                                    <div id="reply_message"></div>
+                                </div>
+                            </form>
+                            <!--Contact Form End-->
+                            
+                        </div>
+                        <!--Content Details Body End-->
+                    
+                    </div>
+            
+                </div>
+            </div>
+        
+        </div>
+        <div class="layout-divider"></div>
+    </div>
+</div>
+<!--Content Wrapper End-->
+{%endblock%}
