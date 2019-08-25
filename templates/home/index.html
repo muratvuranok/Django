@@ -1,5 +1,7 @@
 {% extends 'base.html'%}
 {% load static %}
+{% static 'images' as baseUrl %}
+
 
 {% block content%}
 <!--Content Wrapper Start-->
@@ -11,20 +13,25 @@
             <div class="flexslider">
                 <ul class="slides">
 
+
+
+                {% for slider in sliders%}
+ 
                     <!--Slider 1 Start-->
                     <li class="img-div-cover">
                         <div class="home-slide-overlay" data-bg-color="#000" data-opacity="0.15"></div>
-                        <img src="{% static 'images/upload/home-slider01.jpg' %}" alt="slider" />
+                        <!-- <img src="{% static 'images/upload/home-slider01.jpg' %}" alt="slider" /> -->
+                        <img src="{{slider.img.url}}" alt="slider" />
 
                         <!--Slider Caption Start-->
                         <div class="flex-caption">
                             <div class="home-slide-caption">
                                 <div class="home-slide-category">
                                     <a href="#">
-                                        Travel
+                                        {{slider.category}}
                                     </a>
                                 </div>
-                                <h1>{{slider}}</h1>
+                                <h1>{{slider.header}}</h1>
                                 <div class="home-slide-link">
                                     <a href="#">
                                         Read this article
@@ -35,85 +42,9 @@
                         <!--Slider Caption End-->
 
                     </li>
-                    <!--Slider 1 End-->
+                    <!--Slider 1 End--> 
 
-                    <!--Slider 2 Start-->
-                    <li class="img-div-cover">
-                        <div class="home-slide-overlay" data-bg-color="#000" data-opacity="0.15"></div>
-                        <img src="{% static 'images/upload/home-slider02.jpg' %}" alt="slider" />
-
-                        <!--Slider Caption Start-->
-                        <div class="flex-caption">
-                            <div class="home-slide-caption">
-                                <div class="home-slide-category">
-                                    <a href="#">
-                                        Photography
-                                    </a>
-                                </div>
-                                <h1>Vestibulum odio facilisis ultrices ullamcorper dolor</h1>
-                                <div class="home-slide-link">
-                                    <a href="#">
-                                        Read this article
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slider Caption End-->
-
-                    </li>
-                    <!--Slider 2 End-->
-
-                    <!--Slider 3 Start-->
-                    <li class="img-div-cover">
-                        <div class="home-slide-overlay" data-bg-color="#000" data-opacity="0.15"></div>
-                        <img src="{% static 'images/upload/home-slider03.jpg' %}" alt="slider" />
-
-                        <!--Slider Caption Start-->
-                        <div class="flex-caption">
-                            <div class="home-slide-caption">
-                                <div class="home-slide-category">
-                                    <a href="#">
-                                        People
-                                    </a>
-                                </div>
-                                <h1>Aenean ipsum primis in faucibus</h1>
-                                <div class="home-slide-link">
-                                    <a href="#">
-                                        Read this article
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slider Caption End-->
-
-                    </li>
-                    <!--Slider 3 End-->
-
-                    <!--Slider 4 Start-->
-                    <li class="img-div-cover">
-                        <div class="home-slide-overlay" data-bg-color="#000" data-opacity="0.15"></div>
-                        <img src="{% static 'images/upload/home-slider04.jpg' %}" alt="slider" />
-
-                        <!--Slider Caption Start-->
-                        <div class="flex-caption">
-                            <div class="home-slide-caption">
-                                <div class="home-slide-category">
-                                    <a href="#">
-                                        Lifestyle
-                                    </a>
-                                </div>
-                                <h1>Quisque vitae enim nec gravida</h1>
-                                <div class="home-slide-link">
-                                    <a href="#">
-                                        Read this article
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slider Caption End-->
-
-                    </li>
-                    <!--Slider 4 End-->
+                {% endfor%}
 
                 </ul>
             </div>

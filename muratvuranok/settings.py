@@ -56,7 +56,7 @@ ROOT_URLCONF = 'muratvuranok.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -73,14 +73,14 @@ WSGI_APPLICATION = 'muratvuranok.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django',
-        'NAME':'blogdb',
-        'HOST':'mongodb+srv://admin:Password1@cluster0-tw4uy.mongodb.net/test?retryWrites=true&w=majority',
-        'USER':'admin',
-        'PASSWORD':'Password1'
+        'ENGINE': 'djongo',
+        'NAME': 'blogdb',
+        'HOST': 'mongodb+srv://admin:Password1@cluster0-tw4uy.mongodb.net/test?retryWrites=true&w=majority',
+        'USER': 'admin',
+        'PASSWORD': 'Password1'
     }
 }
- 
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -120,10 +120,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static')
+    os.path.join(BASE_DIR, 'static')
 ]
 
 
+# STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
+ 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
