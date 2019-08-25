@@ -1,0 +1,484 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Libra | Responsive Personal Blog Template</title>
+
+    <!--Bootstrap Element and Grid System-->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Main Elements CSS-->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Font Awesome-->
+    <link href="{% static 'fonts/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!--FlexSlider CSS-->
+    <link href="{% static 'bower_components/FlexSlider/flexslider.css' %}" rel="stylesheet" type="text/css">
+
+    <!--OWL Carousel CSS-->
+    <link href="{% static 'bower_components/owl.carousel/assets/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Megafolio CSS-->
+    <link href="{% static 'bower_components/megafolio/css/settings.css' %}" rel="stylesheet" type="text/css">
+
+    <!--FancyBox CSS-->
+    <link rel="stylesheet" href="{% static 'bower_components/fancybox/jquery.fancybox.css?v=2.1.5' %}" type="text/css"
+        media="screen" />
+    <link rel="stylesheet" href="{% static 'bower_components/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5' %}"
+        type="text/css" media="screen" />
+    <link rel="stylesheet" href="{% static 'bower_components/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7' %}"
+        type="text/css" media="screen" />
+
+    <!--Google Fonts-->
+    <link
+        href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800%7COpen+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic%7CCourgette&amp;subset=latin,latin-ext'
+        rel='stylesheet' type='text/css'>
+
+    <!--Color Scheme Setting-->
+    <link href="{% static 'css/color.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!--Pre Loading Start-->
+    <div class="preloader-container">
+        <div class="preloader-particles-wrapper"></div>
+    </div>
+    <!--Pre Loading End-->
+
+    <!--Background Start-->
+    <div class="bgimage bgimage-cover" data-image-src="{% static 'images/upload/bg-image.jpg' %}">
+        <div id="particles"></div>
+        <div class="bg-overlay" data-bg-color="#353c40" data-opacity="0.85"></div>
+    </div>
+    <!--Background End-->
+
+    <!--Whole Container Start-->
+    <div class="container-wrapper">
+
+        <!--Overlay Search Start-->
+        <div class="search-overlay overlay-hugeinc">
+            <div class="container">
+
+                <!--Search Close Start-->
+                <div class="overlay-close-wrapper">
+                    <div class="overlay-close"></div>
+                </div>
+                <!--Search Close End-->
+
+                <!--Search Input Start-->
+                <div class="search-input">
+                    <div class="search-form">
+                        <form>
+                            <input type="search" name="search" placeholder="Search and hit enter">
+                        </form>
+                    </div>
+                </div>
+                <!--Search Input Close-->
+
+            </div>
+        </div>
+        <!--Overlay Search End-->
+
+        <!--Header Start-->
+        <header>
+            <div class="container">
+
+                <!--Logo Start-->
+                <div class="logo">
+                    <a href="{% static 'index.html' %}">
+                        <img src="{% static 'images/logo.png' %}" alt="logo" />
+                    </a>
+                </div>
+                <!--Logo End-->
+
+                <!--Navigation Menu Start-->
+                <div class="nav-menu">
+
+                    <!--Open Close Menu-->
+                    <div class="burger-menu"><i class="fa fa-bars"></i></div>
+
+                    <!--Search Icon-->
+                    <div id="trigger-overlay" class="search-open"><i class="fa fa-search"></i></div>
+
+                    <!--Menu Start-->
+                    <ul>
+                        <li class="current-menu"><a href="index.html">Home</a>
+                            <ul>
+                                <li><a href="index.html">Standard</a></li>
+                                <li><a href="home-standard-fullwidth.html">Standard fullwidth</a></li>
+                                <li><a href="home-blog-list.html">Blog list</a></li>
+                                <li><a href="home-blog-list-fullwidth.html">Blog list fullwidth</a></li>
+                                <li><a href="home-masonry.html">Masonry</a></li>
+                                <li><a href="home-masonry-fullwidth.html">Masonry fullwidth</a></li>
+                                <li><a href="#">Third level menu</a>
+                                    <ul>
+                                        <li><a href="#">Third level menu</a></li>
+                                        <li><a href="#">Third level menu</a></li>
+                                        <li><a href="#">Third level menu</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Category</a>
+                            <ul>
+                                <li><a href="category-page.html">Standard</a></li>
+                                <li><a href="category-page-fullwidth.html">Standard fullwidth</a></li>
+                                <li><a href="category-page-list.html">Blog list</a></li>
+                                <li><a href="category-page-list-fullwidth.html">Blog list fullwidth</a></li>
+                                <li><a href="category-page-masonry.html">Masonry</a></li>
+                                <li><a href="category-page-masonry-fullwidth.html">Masonry fullwidth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Features</a>
+                            <ul>
+                                <li><a href="post-standard.html">Standard post</a></li>
+                                <li><a href="post-gallery-one.html">Gallery post one</a></li>
+                                <li><a href="post-gallery-two.html">Gallery post two</a></li>
+                                <li><a href="post-video-youtube.html">Video post youtube</a></li>
+                                <li><a href="post-video-vimeo.html">Video post vimeo</a></li>
+                                <li><a href="post-audio.html">Audio post</a></li>
+                                <li><a href="#">Post fullwidth</a>
+                                    <ul>
+                                        <li><a href="post-standard-fullwidth.html">Standard post</a></li>
+                                        <li><a href="post-gallery-one-fullwidth.html">Gallery post one</a></li>
+                                        <li><a href="post-gallery-two-fullwidth.html">Gallery post two</a></li>
+                                        <li><a href="post-video-youtube-fullwidth.html">Video post youtube</a></li>
+                                        <li><a href="post-video-vimeo-fullwidth.html">Video post vimeo</a></li>
+                                        <li><a href="post-audio-fullwidth.html">Audio post</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="color-widget.html">Color widget</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about-me.html">About me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                    </ul>
+                    <!--Menu End-->
+
+                </div>
+                <!--Navigation Menu End-->
+
+            </div>
+        </header>
+        <!--Header End-->
+
+        {% block content%}
+        {%endblock%}
+
+        <!--Footer Start-->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-wrapper">
+
+                    <!--Footer Instagram Start-->
+                    <div class="footer-instagram">
+                        <h2>Follow Instagram</h2>
+                        <div class="footer-instagram-carousel">
+                            <div class="owl-carousel footer-carousel">
+
+                                <!--Item 1 Start-->
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <figure>
+                                            <div class="overlay-hover"></div>
+                                            <img src="{% static 'images/upload/footer-instagram-item01.jpg' %}"
+                                                alt="instagram" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!--End-->
+
+                                <!--Item 2 Start-->
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <figure>
+                                            <div class="overlay-hover"></div>
+                                            <img src="{% static 'images/upload/footer-instagram-item02.jpg' %}"
+                                                alt="instagram" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!--End-->
+
+                                <!--Item 3 Start-->
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <figure>
+                                            <div class="overlay-hover"></div>
+                                            <img src="{% static 'images/upload/footer-instagram-item03.jpg' %}"
+                                                alt="instagram" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!--End-->
+
+                                <!--Item 4 Start-->
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <figure>
+                                            <div class="overlay-hover"></div>
+                                            <img src="{% static 'images/upload/footer-instagram-item04.jpg' %}"
+                                                alt="instagram" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!--End-->
+
+                                <!--Item 5 Start-->
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <figure>
+                                            <div class="overlay-hover"></div>
+                                            <img src="{% static 'images/upload/footer-instagram-item05.jpg' %}"
+                                                alt="instagram" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!--End-->
+
+                                <!--Item 6 Start-->
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <figure>
+                                            <div class="overlay-hover"></div>
+                                            <img src="{% static 'images/upload/footer-instagram-item06.jpg' %}"
+                                                alt="instagram" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!--End-->
+
+                                <!--Item 7 Start-->
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <figure>
+                                            <div class="overlay-hover"></div>
+                                            <img src="{% static 'images/upload/footer-instagram-item07.jpg' %}"
+                                                alt="instagram" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!--End-->
+
+                                <!--Item 8 Start-->
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <figure>
+                                            <div class="overlay-hover"></div>
+                                            <img src="{% static 'images/upload/footer-instagram-item08.jpg' %}"
+                                                alt="instagram" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!--End-->
+
+                                <!--Item 9 Start-->
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <figure>
+                                            <div class="overlay-hover"></div>
+                                            <img src="{% static 'images/upload/footer-instagram-item09.jpg' %}"
+                                                alt="instagram" />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!--End-->
+
+                            </div>
+
+                            <!--Custom Navigation Start-->
+                            <div class="footer-carousel-nav">
+                                <div class="footer-carouselArrow prev"><i class="fa fa-angle-left"></i></div>
+                                <div class="footer-carouselArrow next"><i class="fa fa-angle-right"></i></div>
+                            </div>
+                            <!--Custom Navigation End-->
+
+                        </div>
+                    </div>
+                    <!--Footer Instagram End-->
+
+                    <!--Footer Details Start-->
+                    <div class="footer-details">
+                        <div class="row">
+
+                            <!--Footer Widget 1 Start-->
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <aside class="widget widget_about_us">
+                                        <div class="widget-detail">
+                                            <div class="widget-about-img img-div-cover">
+                                                <img src="{% static 'images/footer-logo.png' %}" alt="logo" />
+                                            </div>
+                                            <div class="widget-about-detail">
+                                                <p>Vestibulum ante ipsum primis in faucibus luctus et ultrices posuere
+                                                    cubilia curae aliquam dignissim viverra dolor sit condimentum aenean
+                                                    sollicitudin justo eu pulvinar rutrum.</p>
+                                                <div class="widget-about-social">
+                                                    <ul>
+                                                        <li><a href="#" target="_blank"><i
+                                                                    class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="#" target="_blank"><i
+                                                                    class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="#" target="_blank"><i
+                                                                    class="fa fa-linkedin"></i></a></li>
+                                                        <li><a href="#" target="_blank"><i class="fa fa-google"></i></a>
+                                                        </li>
+                                                        <li><a href="#" target="_blank"><i
+                                                                    class="fa fa-pinterest-p"></i></a></li>
+                                                        <li><a href="#" target="_blank"><i
+                                                                    class="fa fa-dribbble"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                            <!--Footer Widget 1 End-->
+
+                            <!--Footer Widget 2 Start-->
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <aside class="widget widget_tag_cloud">
+                                        <div class="widget-title">
+                                            <h3>Popular tags</h3>
+                                        </div>
+                                        <div class="widget-detail">
+                                            <div class="tagcloud">
+                                                <a href="#">semper<span>(5)</span></a>
+                                                <a href="#">risus<span>(6)</span></a>
+                                                <a href="#">ullamcorper<span>(7)</span></a>
+                                                <a href="#">condimentum<span>(5)</span></a>
+                                                <a href="#">condimentum<span>(3)</span></a>
+                                                <a href="#">semper<span>(5)</span></a>
+                                                <a href="#">risus<span>(6)</span></a>
+                                                <a href="#">ullamcorper<span>(7)</span></a>
+                                                <a href="#">condimentum<span>(5)</span></a>
+                                                <a href="#">condimentum<span>(3)</span></a>
+                                                <a href="#">semper<span>(5)</span></a>
+                                                <a href="#">risus<span>(6)</span></a>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                            <!--Footer Widget 2 End-->
+
+                            <!--Footer Widget 3 Start-->
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <aside class="widget widget_follow_subscribe">
+                                        <div class="widget-title">
+                                            <h3>Subscribe</h3>
+                                        </div>
+                                        <div class="widget-detail">
+                                            <p>Aenean et tortor vitae diam cursus ornare sit amet nec mi. In tempor
+                                                libero nec.</p>
+                                            <div data-height="15"></div>
+                                            <form class="subscribe">
+                                                <input class="subscribe-email" type="text" name="email"
+                                                    placeholder="Your email address..." required />
+                                                <input class="subscribe-button" type="submit" value="Subscribe" />
+                                            </form>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                            <!--Footer Widget 3 End-->
+
+                        </div>
+                    </div>
+                    <!--Footer Details End-->
+
+
+                    <!--Footer Bottom Start-->
+                    <div class="footer-bottom">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="bottom-text-left">
+                                    Copyrights © 2015 <a href="#">Libra</a>. All Rights Reserved.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bottom-text-right">
+                                    Lorem ipsum dolor sit consectetur dictum dolor euismod.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Footer Bottom ENd-->
+
+                </div>
+            </div>
+        </footer>
+        <!--Footer End-->
+
+        <!--Back to Top Start-->
+        <a class="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>
+        <!--Back to Top End-->
+
+    </div>
+    <!--Whole Container End-->
+
+    <!--jQuery files-->
+    <script type="text/javascript" src="{% static 'js/vendor/jquery-1.11.3.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendor/modernizr.custom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/classie.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/search.js' %}"></script>
+
+    <!--jQuery Retina-->
+    <script type="text/javascript" src="{% static 'js/retina.js' %}"></script>
+
+    <!--Particle Background js file-->
+    <script type="text/javascript" src="{% static 'js/jquery.particleground.js' %}"></script>
+
+    <!--jQuery FlexSlider-->
+    <script type="text/javascript" src="{% static 'bower_components/FlexSlider/jquery.flexslider.js' %}"></script>
+
+    <!--jQuery OWL Carousel-->
+    <script type="text/javascript" src="{% static 'bower_components/owl.carousel/owl.carousel.min.js' %}"></script>
+
+    <!--jQuery Megafolio-->
+    <script type="text/javascript"
+        src="{% static 'bower_components/megafolio/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'bower_components/megafolio/js/jquery.themepunch.megafoliopro.js' %}"></script>
+
+    <!--jQuery FancyBox-->
+    <script type="text/javascript"
+        src="{% static 'bower_components/fancybox/jquery.fancybox.pack.js?v=2.1.5' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'bower_components/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'bower_components/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'bower_components/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7' %}"></script>
+
+    <!--jQuery Isotope-->
+    <script type="text/javascript" src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+
+    <!--jQuery Imageloaded-->
+    <script type="text/javascript" src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+
+    <!--FitVids js file-->
+    <script type="text/javascript" src="{% static 'js/jquery.fitvids.js' %}"></script>
+
+    <!--Placeholder js file-->
+    <script type="text/javascript" src="{% static 'js/placeholder.js' %}"></script>
+
+    <!--HC Sticky js file-->
+    <script type="text/javascript" src="{% static 'js/jquery.hc-sticky.min.js' %}"></script>
+
+    <!--Custom js file-->
+    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+</body>
+
+</html>
